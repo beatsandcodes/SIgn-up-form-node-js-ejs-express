@@ -1,0 +1,21 @@
+<!-- user.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Signup Successful</title>
+</head>
+<body>
+
+    <% if (locals.emailExists) { %>
+        <div class="alert alert-danger">
+            Email already exists. Please use a different email.
+        </div>
+    <% } else { %>
+        <h1>Signup Successful</h1>
+    <% } %>
+    <a href="/">Go back to homepage</a>
+</body>
+</html>
